@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  gophish:
+    image: gophish/gophish:latest
+    ports:
+      - 3333:3333
+      - 80:80
+    volumes:
+      - ./config:/config
+    restart: always
